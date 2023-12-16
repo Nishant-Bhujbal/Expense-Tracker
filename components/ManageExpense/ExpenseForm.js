@@ -45,7 +45,7 @@ function ExpenseForm({submitButtonLabel,onCancel,onSubmit,defaultValues}) {
 
     const amountIsValid = !isNaN(expenseData.amount) && expenseData.amount > 0;
     const dateIsValid = expenseData.date.toString() !== 'Invalid Date';
-    const descriptionIsValid = expenseData.description.trim().lenght > 0;
+    const descriptionIsValid = expenseData.description.trim().length > 0;
 
     if(!amountIsValid || !dateIsValid || !descriptionIsValid){
       // Alert.alert('Invalid Input','Please check your input values');
